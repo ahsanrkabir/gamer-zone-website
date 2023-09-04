@@ -1,0 +1,178 @@
+/* Work Sans font from Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+/* shared styles */
+* {
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+}
+
+.btn {
+    margin: 20px 20px;
+}
+
+.btn-primary {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    background-color: #FF42A5;
+    border: 0;
+    border-radius: 48px;
+    padding: 20px 40px;
+}
+
+.btn-secondary {
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    background-color: #4EC5F7;
+    border: 0;
+    border-radius: 48px;
+    padding: 20px 40px;
+}
+
+.section-title {
+    text-align: right;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.section-info {
+    color: #534C64;
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+/* header section styles */
+
+/* nav section styles */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 45px 250px;
+}
+
+nav>.nav-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-container li {
+    list-style: none;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.nav-container a {
+    color: #3C354F;
+    text-decoration: none;
+}
+
+.nav-logo {
+    width: 86px;
+    height: 40px;
+}
+
+.nav-title {
+    color: #0B0223;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.pink-span {
+    color: #FF42A5;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+nav>img {
+    width: 100%;
+}
+
+.info-link {
+    display: flex;
+    gap: 30px;
+}
+
+.follow-link {
+    padding: 15px 25px;
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-icon {
+    width: 33.916px;
+    height: 24px;
+}
+
+/* banner section styles */
+
+.banner-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-content {
+    text-align: left;
+    background-color: #FCF6FD;
+    padding: 150px 240px;
+}
+
+.banner-img-container {
+    padding-right: 240px;
+}
+
+.banner-text {
+    color: #0B0223;
+    text-align: left;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.banner-title {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: left;
+    font-size: 6rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.banner-content p {
+    color: #534C64;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+/* gamer section styles */
+
+.gamer-section {
+    padding: 50px 240px;
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.gamer-content {
+    align-items: end;
+}

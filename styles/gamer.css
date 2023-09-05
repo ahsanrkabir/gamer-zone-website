@@ -22,6 +22,7 @@
     border: 0;
     border-radius: 48px;
     padding: 20px 40px;
+    text-transform: uppercase;
 }
 
 .btn-secondary {
@@ -32,12 +33,14 @@
     border: 0;
     border-radius: 48px;
     padding: 20px 40px;
+    text-transform: uppercase;
 }
 
 .section-title {
     text-align: right;
     font-size: 3rem;
     font-weight: 700;
+    margin-bottom: 25px;
 }
 
 .section-info {
@@ -46,6 +49,7 @@
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 30px;
+    margin-bottom: 25px;
 }
 
 /* header section styles */
@@ -125,6 +129,7 @@ nav>img {
 .banner-section {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 .banner-content {
@@ -167,12 +172,97 @@ nav>img {
 /* gamer section styles */
 
 .gamer-section {
+    background-color: #FCF6FD;
     padding: 50px 240px;
     display: flex;
     gap: 50px;
     justify-content: space-between;
 }
 
-.gamer-content {
-    align-items: end;
+.know-more-btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 25px;
+}
+
+.gamer-tag {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.gamer-tag>h4 {
+    text-align: right;
+    color: #534C64;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.tag {
+    color: #534C64;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* responsive media queries: mobile/smaller devices */
+
+@media screen and (max-width: 576px) {
+    nav {
+        width: 98%;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .nav-container {
+        margin-bottom: 50px;
+    }
+
+    .nav-container-2 {
+        flex-direction: column;
+    }
+
+    .banner-section {
+        width: 100%;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .banner-img-container {
+        display: flex;
+        padding-right: 0;
+    }
+
+    .banner-img-container img {
+        padding: 0 160px;
+        width: 140%;
+    }
+
+    .banner-content {
+        margin: 0 120px;
+        padding-top: 100px;
+        padding-left: 800px;
+    }
+
+    .gamer-section {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gamer-img-container img {
+        width: 100%;
+    }
+
+    .gamer-tag {
+        justify-content: center;
+    }
+
+    .section-title,
+    .section-info,
+    .gamer-tag>h4 {
+        text-align: center;
+    }
+
+    .know-more-btn {
+        padding-right: 115px;
+    }
 }

@@ -244,6 +244,42 @@ nav>img {
     margin: 200px 0;
 }
 
+/* game-types section styles */
+
+.game-types-section {
+    margin-top: 50px;
+    padding: 120px 240px;
+    background-color: #FCF6FD;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.game-types {
+    width: 243px;
+    height: 80px;
+    border-radius: 50px;
+    background: #FFF;
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.game-types:hover {
+    border: 2px solid #FF42A5;
+}
+
+.game-types:hover .type-title {
+    color: #FF42A5;
+}
+
+.type-title {
+    color: #0B0223;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
 /* responsive media queries: mobile/smaller devices */
 
 @media screen and (max-width: 576px) {
@@ -339,5 +375,11 @@ nav>img {
     .play-instant-section {
         width: 100%;
         flex-direction: column-reverse;
+    }
+
+    .game-types-section {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
 }

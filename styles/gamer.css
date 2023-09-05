@@ -37,19 +37,19 @@
 }
 
 .section-title {
-    text-align: right;
+    text-align: center;
     font-size: 3rem;
     font-weight: 700;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 .section-info {
     color: #534C64;
-    text-align: right;
+    text-align: center;
     font-size: 1.2rem;
     font-weight: 400;
     line-height: 30px;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 /* header section styles */
@@ -151,7 +151,7 @@ nav>img {
 }
 
 .banner-title {
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-color: #FF42A5;
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -179,6 +179,12 @@ nav>img {
     justify-content: space-between;
 }
 
+.gamer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
 .know-more-btn {
     display: flex;
     justify-content: flex-end;
@@ -201,6 +207,22 @@ nav>img {
     color: #534C64;
     font-size: 2rem;
     font-weight: 700;
+}
+
+/* online-games section style */
+
+.online-games-section {
+    margin: 100px 240px;
+}
+
+.games-container {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.games-container img {
+    margin-bottom: 25px;
 }
 
 /* responsive media queries: mobile/smaller devices */
@@ -237,13 +259,13 @@ nav>img {
     }
 
     .banner-content {
-        margin: 0 120px;
+        margin: 0;
         padding-top: 100px;
         padding-left: 800px;
     }
 
     .gamer-section {
-        width: 100%;
+        width: 102%;
         flex-direction: column;
         align-items: center;
     }
@@ -259,10 +281,39 @@ nav>img {
     .section-title,
     .section-info,
     .gamer-tag>h4 {
+        width: 100%;
         text-align: center;
     }
 
     .know-more-btn {
         padding-right: 115px;
+    }
+
+    .online-games-section {
+        margin: 0 10px;
+    }
+
+    .online-games-section h3 {
+        padding: 25px 250px 0;
+    }
+
+    .online-games-section p {
+        width: 100%;
+        padding: 0 250px;
+    }
+
+    .games-container {
+        width: 100%;
+        padding: 0 250px;
+        flex-direction: column;
+    }
+
+    .games img {
+        padding-left: 40px;
+    }
+
+    .games h4 {
+        text-align: center;
+        padding: 0;
     }
 }

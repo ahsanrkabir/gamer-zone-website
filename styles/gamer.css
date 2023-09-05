@@ -234,6 +234,11 @@ nav>img {
     justify-content: space-between;
 }
 
+.play-instant-img {
+    margin-bottom: 0;
+    width: 100%;
+}
+
 .relative-img {
     position: relative;
     top: -300px;
@@ -278,6 +283,68 @@ nav>img {
     color: #0B0223;
     font-size: 1.25rem;
     font-weight: 600;
+}
+
+/* footer section styles */
+
+.footer {
+    background: #0B0223;
+}
+
+.footer .nav-container {
+    padding-top: 120px;
+    padding-bottom: 50px;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+}
+
+.white-span {
+    color: #FFF;
+}
+
+.footer-list {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.footer-list a {
+    color: #FFF;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+
+.footer-icons {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+
+.terms {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.terms li {
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.copyright {
+    color: white;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.60);
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 /* responsive media queries: mobile/smaller devices */
@@ -377,9 +444,35 @@ nav>img {
         flex-direction: column-reverse;
     }
 
+    .play-instant-img {}
+
     .game-types-section {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer {
+        padding: 0 300px;
+        width: 90%;
+    }
+
+    .footer-list {
+        width: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer-icons {
+        padding: 0 100px;
+        width: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .terms {
+        width: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 }
